@@ -1,6 +1,6 @@
 [project]
 name = "prj"
-version = "0.3.0"
+version = "0.3.1"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -15,8 +15,10 @@ dependencies = [
 
 [tool.setuptools]
 packages = ["agent"]
-ext_modules = true
 
+[tool.cython]
+compile_py = true
+exclude = []
 
 [build-system]
 requires = ["setuptools>=70", "wheel", "cython"]
